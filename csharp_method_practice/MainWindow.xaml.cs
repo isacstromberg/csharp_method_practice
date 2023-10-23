@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,22 @@ namespace csharp_method_practice
             string[] testArr = { "I", "am", "testing", "a", "method","called", "Join()" };
             string testJoin = String.Join(" ", testArr);
             MessageBox.Show(testJoin);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            string[] stringArr = { "C", "B", "A" };
+            int[] intArr = { 3, 2, 1, };
+
+            Array.Sort(stringArr);
+            Array.Sort(intArr);
+
+            string[] intArrToString = intArr.Select(i => i.ToString()).ToArray();
+            string presentStringArr = String.Join(" ", stringArr);
+           string presentIntArr = String.Join(" ", intArrToString);
+
+            MessageBox.Show(presentStringArr);
+            MessageBox.Show(presentIntArr);
         }
     }
 }
