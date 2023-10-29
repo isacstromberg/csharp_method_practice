@@ -71,5 +71,32 @@ namespace csharp_method_practice
             MessageBox.Show(presentStringArr);
             MessageBox.Show(presentIntArr);
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            string a = "b";
+            string b = "b";
+            int result = 0;
+           result = String.Compare(b, a);
+            MessageBox.Show(result.ToString());
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            string mailEnding = "@hotmasil.com";
+            if (mailEnding.EndsWith("@hotmail.com"))
+            {
+                MessageBox.Show("Correct format");
+            }
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            string start = "start";
+            if (start.StartsWith("start"))
+            {
+                MessageBox.Show("correct");
+            }
+        }
     }
 }
