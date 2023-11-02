@@ -144,5 +144,35 @@ namespace csharp_method_practice
 
             MessageBox.Show(test);
         }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            int[] sourceArray = { 1, 2, 3, 4, 5 };
+            int[] destinationArray = new int[5];
+
+            sourceArray.CopyTo(destinationArray, 0);
+
+            foreach (int num in destinationArray)
+            {
+                MessageBox.Show(num.ToString());
+            }
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            string name = "John";
+            int age = 30;
+            double height = 175.5;
+
+            string formattedString = string.Format("Name: {0}, Age: {1}, Height: {2}", name, age, height);
+
+            // decimal pricePerOunce = 17.36m;
+            int pricePerOunce = 2, pricePerKilo = 1;
+            String s = String.Format("The current price is {0} per ounce and {1} per kilo.",
+                                     pricePerOunce, pricePerKilo);
+
+            MessageBox.Show(formattedString);
+            MessageBox.Show(s);
+        }
     }
 }
