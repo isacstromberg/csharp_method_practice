@@ -83,7 +83,7 @@ namespace csharp_method_practice
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            string mailEnding = "@hotmasil.com";
+            string mailEnding = "@hotmail.com";
             if (mailEnding.EndsWith("@hotmail.com"))
             {
                 MessageBox.Show("Correct format");
@@ -97,6 +97,52 @@ namespace csharp_method_practice
             {
                 MessageBox.Show("correct");
             }
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            string test = "test";
+            MessageBox.Show(test.LastIndexOf("t").ToString());
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            string test = "test";
+     
+            MessageBox.Show(test.IndexOf("t").ToString());
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            string s1 = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvXxYyZz1234567890._-";
+            string s2 = "fox-123_testing";
+            bool b = false;
+
+            foreach (char c in s2)
+            {
+                if (s1.Contains(c.ToString()))
+                {
+                    b = true;
+                }
+                if (!s1.Contains(c.ToString()))
+                {
+                    b = false;
+                    break;
+                }
+            }
+
+            MessageBox.Show(b.ToString());
+        }
+
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            string test = "test";
+         
+            test = test.Replace('t', 'ö');
+          
+           
+
+            MessageBox.Show(test);
         }
     }
 }
