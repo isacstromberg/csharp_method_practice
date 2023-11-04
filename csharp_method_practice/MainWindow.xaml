@@ -26,8 +26,16 @@
         <Button Content="Button" HorizontalAlignment="Left" Margin="269,142,0,0" VerticalAlignment="Top" Width="70"/>
         <Button Content="CopyTo()" HorizontalAlignment="Left" Margin="158,297,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_12"/>
         <Button Content="Format()" HorizontalAlignment="Left" Margin="283,297,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_13"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="402,297,0,0" VerticalAlignment="Top" Width="70"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="527,297,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button Content="GetPinnableReference()" HorizontalAlignment="Left" Margin="375,297,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click_14"/>
+        <Button Content="Insert()" HorizontalAlignment="Left" Margin="527,297,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_15"/>
+        <Button Content="IsNullOrEmpty()" HorizontalAlignment="Left" Margin="132,334,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_16"/>
+        <Button Content="IsNullOrWhiteSpace()" HorizontalAlignment="Left" Margin="253,339,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click_17"/>
+        <Button Content="PadLeft()" HorizontalAlignment="Left" Margin="400,339,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_18"/>
+        <Button Content="PadRight()" HorizontalAlignment="Left" Margin="513,339,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_19"/>
+        <Button Content="Remove()" HorizontalAlignment="Left" Margin="150,370,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_20"/>
+        <Button Content="Trim()" HorizontalAlignment="Left" Margin="269,370,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_21"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="390,370,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="513,370,0,0" VerticalAlignment="Top" Width="70"/>
 
 
     </Grid>

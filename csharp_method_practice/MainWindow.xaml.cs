@@ -167,12 +167,62 @@ namespace csharp_method_practice
             string formattedString = string.Format("Name: {0}, Age: {1}, Height: {2}", name, age, height);
 
             // decimal pricePerOunce = 17.36m;
-            int pricePerOunce = 2, pricePerKilo = 1;
+            string pricePerOunce = "2", pricePerKilo = "1";
             String s = String.Format("The current price is {0} per ounce and {1} per kilo.",
                                      pricePerOunce, pricePerKilo);
 
             MessageBox.Show(formattedString);
             MessageBox.Show(s);
         }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+            string test = "This is a test";
+            string getPinn = test.GetPinnableReference().ToString();
+            MessageBox.Show(getPinn);
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            string test = "Test";
+            string modTest = test.Insert(4, "!");
+            MessageBox.Show(modTest);   
+        }
+
+        private void Button_Click_16(object sender, RoutedEventArgs e)
+        {
+            string test = "";
+            MessageBox.Show(String.IsNullOrEmpty(test).ToString());
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            string test = " ";
+            MessageBox.Show(String.IsNullOrWhiteSpace(test).ToString());
+        }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            string test = "test";
+            MessageBox.Show(test.PadLeft(10, '?'));
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            string test = "test";
+            MessageBox.Show(test.PadRight(10, '?'));
+        }
+
+        private void Button_Click_20(object sender, RoutedEventArgs e)
+        {
+            string test = "testrest";
+            MessageBox.Show(test.Remove(5));
+        }
+
+        private void Button_Click_21(object sender, RoutedEventArgs e)
+        {
+            string test = "  testrest  ";
+            MessageBox.Show(test.Trim());
+        }
     }
-}
+    }
