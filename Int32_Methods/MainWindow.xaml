@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="TryParse()" HorizontalAlignment="Left" Margin="240,147,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="337,147,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_1"/>
+        <Button Content="CompareTo()" HorizontalAlignment="Left" Margin="337,147,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="436,147,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_2"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="534,147,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_3"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="240,172,0,0" VerticalAlignment="Top" Width="63"/>

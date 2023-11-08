@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Int32_Methods
+namespace LeetCode
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,29 +27,32 @@ namespace Int32_Methods
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int number;
-            string value = "2";
-            bool success = int.TryParse(value, out number);
-            MessageBox.Show(success.ToString());
+            string test = "testing";
+            for (int i = 0; i < test.Length; i++)
+            {
+                test = test[..^1];
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int mainValue = 1;
-            int zeroValue = 2;
+            Dictionary<int,string> data = new Dictionary<int,string>();
 
-            MessageBox.Show(mainValue.CompareTo(zeroValue).ToString());
+            data.Add(1, "Jane Doe");
+            data.Add(2, "Jon Doe");
+            data.Add(11, "Sully Doe");
 
-        }
+            Dictionary<string, int> romanletters = new Dictionary<string, int>();
+            romanletters.Add("IV", 4);
+            romanletters.Add("I", 1);
+            int result = 0;
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-         
-        }
+            string test = "I";
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-
+            for (int i = 0; i < test.Length; i++)
+            {
+                result += romanletters[test];
+            }
         }
     }
 }
